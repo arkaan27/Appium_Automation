@@ -31,6 +31,10 @@ public class Hook {
 
     @Before
     public void setUp(){
+        /**
+         * Sets up the driver using the constants.chrome_driver_path;
+         *
+         */
 
         System.setProperty("webdriver.chrome.driver", constants.chrome_driver_path);
         driver = new ChromeDriver();
@@ -40,7 +44,10 @@ public class Hook {
 
     @Before
     public void setUpAppium(){
-
+        /**
+         * Sets up Appium capabilities according to constants file
+         *
+         */
         DesiredCapabilities cap= new DesiredCapabilities();
         cap.setCapability(MobileCapabilityType.PLATFORM_NAME, constants.platform_name);
         cap.setCapability(MobileCapabilityType.DEVICE_NAME, constants.device_name);
@@ -50,11 +57,13 @@ public class Hook {
 
     @After
     public void tearDown(){
+        /**
+         * Quits the driver
+         */
         driver.quit();
     }
 
     public static WebDriver getDriver(){
-
         return driver;
 
     }

@@ -38,6 +38,8 @@ public class AppiumScenario {
         Assert.assertTrue(driver.findElement(By.xpath("//Button[@id='allocationtypeBalanced']")).isDisplayed());
         Assert.assertTrue(driver.findElement(By.xpath("//Button[@id='allocationtypeAdventurous']")).isDisplayed());
 
+        throw new io.cucumber.java.PendingException();
+
     }
 
     @When("user clicks on Cautious button")

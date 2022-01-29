@@ -1,5 +1,5 @@
 @appium
-Feature: Allocation of Cautious Tab
+Feature: Allocation of all Tabs
 
   Scenario: Checks the Allocation of Cautious tab(AP4,AP5,AP6)
 
