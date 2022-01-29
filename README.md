@@ -17,6 +17,10 @@ the tests using [RunTest](src/test/java/runner/RunTest.java).
 The [Hook class](src/test/java/Utilities/Hook.java) is used by the step definitions to start and close the driver.
 The [constants class](src/test/java/Utilities/constants.java) is used by the Tester to edit the variables for testing. The comments are available in the class for guidance.
 
+In the future, features folder can be updated with additional features to check thorough front-end of the application
+
+This should update the AppiumScenario step definitions accordingly.
+
 # Setting up
 
 Firstly download chrome driver on your device by going onto https://chromedriver.storage.googleapis.com/index.html?path=98.0.4758.48/
@@ -85,19 +89,22 @@ a,b,c are integer variables displayed on screen.
 
 These variables can be edited according to scenario fit.
 
-#Hook Class
+# Hook Class
 
 The hook class consists of starting the webdriver and setting up Appium capabilitis.
 It is triggered before the Tests run to launch the driver and run after the tests finishes to close the driver.
 
 It consists of 4 functions:
 
-1. setUp
-2. setUpAppium
-3. tearDown
-4. getDriver
+1. setUp (starts the driver from the device)
+2. setUpAppium (sets capabilities for Appium)
+3. tearDown ( quits the driver )
+4. getDriver( gets the driver for running the scenario)
 
-#Run Test
+# Licenses
+
+(Need to update this section)
+
 
 
 
